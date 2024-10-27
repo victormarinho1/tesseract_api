@@ -1,0 +1,8 @@
+opencv-python
+flask
+numpy
+imutils
+pytesseract
+requests
+opencv-python-headless  # Para evitar conflitos de GUI se necessário
+werkzeug

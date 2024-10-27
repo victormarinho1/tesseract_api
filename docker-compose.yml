@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  leitor-de-placas:
+    build: .
+    container_name: leitor-de-placas-container
+    ports:
+      - "5001:5001"
+    environment:
+      - TESSDATA_PREFIX=/app/tessdata
+    networks:
+      - smart_parking
+networks:
+  smart_parking:
+    external: true
+
